@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Audio & Electrónica - Búsqueda</title>
+    <title>Vivero Botánico - Búsqueda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Audio & Electrónica Tuxtla</h1>
+        <h1>🌿 Vivero Botánico</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -21,24 +21,26 @@
     </header>
     <main>
         
-<h2>Búsqueda de Productos</h2>
+<h2>Búsqueda de Plantas y Accesorios</h2>
 <div class="form-group" style="display: flex; gap: 10px;">
-    <input type="text" id="input-busqueda" placeholder="Ej. Amplificador, RCA, Transistor...">
-    <button id="btn-buscar" class="btn">Buscar</button>
+    <input type="text" id="input-busqueda" placeholder="Escribe el nombre de la planta... ej. Helecho, Ficus">
+    <button id="btn-buscar" class="btn btn-buscar">Buscar</button>
 </div>
 
-<div id="area-resultados" style="margin-bottom: 30px; padding: 15px; background: #e9ecef; border-radius: 4px; min-height: 50px; font-size: 18px;">
+<div id="area-resultados" style="margin-bottom: 30px; padding: 15px; background: #eaf4f4; border-left: 4px solid #40916c; border-radius: 4px; min-height: 50px; font-size: 18px; color: #1b4332;">
     <!-- Aquí JavaScript inyecta el resultado -->
 </div>
 
-<h3>Sugerencias del catálogo:</h3>
+<h3>Algunas sugerencias que te pueden gustar:</h3>
 <div class="producto-grid">
     <div class="producto-card">
-        <h4>Cable RCA Macho a Macho 5m</h4>
+        <img src="https://images.unsplash.com/photo-1485909645900-6923bc4102ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Helecho">
+        <h4>Helecho Boston</h4>
         <button class="btn btn-agregar" disabled>Ver detalles</button>
     </div>
     <div class="producto-card">
-        <h4>Transistor MOSFET IRFZ44N</h4>
+        <img src="https://images.unsplash.com/photo-1599598425947-33002629b532?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ficus">
+        <h4>Ficus Lyrata (Árbol)</h4>
         <button class="btn btn-agregar" disabled>Ver detalles</button>
     </div>
 </div>

@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Audio & Electrónica - Registro</title>
+    <title>Vivero Botánico - Registro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Audio & Electrónica Tuxtla</h1>
+        <h1>🌿 Vivero Botánico</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -22,20 +22,20 @@
     <main>
         
 <h2>Crear una Cuenta</h2>
-<p>Completa tus datos para registrarte en la tienda.</p>
+<p>Únete a nuestra comunidad verde. Llena el siguiente formulario.</p>
 <form id="form-registro">
     <div class="form-group">
         <label>Nombre completo:</label>
-        <input type="text" id="nombre">
+        <input type="text" id="nombre" placeholder="Ej. Ana Pérez">
     </div>
     <div class="form-group">
         <label>Correo Electrónico:</label>
         <!-- Validación con Expresión Regular HTML5, SIN usar required -->
-        <input type="text" id="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" title="Ingresa un correo válido (ej. usuario@correo.com)">
+        <input type="text" id="email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" title="Ingresa un correo válido (ej. correo@ejemplo.com)" placeholder="ejemplo@correo.com">
     </div>
     <div class="form-group">
         <label>Contraseña:</label>
-        <input type="password" id="pass">
+        <input type="password" id="pass" placeholder="Crea una contraseña segura">
     </div>
     <div class="form-group">
         <label>Fecha de Nacimiento:</label>
@@ -43,13 +43,13 @@
     </div>
     <div class="form-group">
         <label>Teléfono:</label>
-        <input type="number" id="telefono">
+        <input type="number" id="telefono" placeholder="10 dígitos numéricos">
     </div>
     <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
         <input type="checkbox" id="terminos" style="width: auto; margin: 0;">
-        <label style="margin: 0;">Acepto los términos y condiciones de compra</label>
+        <label style="margin: 0; color:#333;">Acepto los términos y condiciones de la tienda</label>
     </div>
-    <button type="submit" id="btn-enviar" class="btn" disabled>Registrarme</button>
+    <button type="submit" id="btn-enviar" class="btn" disabled>Completar Registro</button>
 </form>
 
     </main>

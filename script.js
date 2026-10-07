@@ -30,7 +30,7 @@ if (termsCheckbox && submitBtn && formRegistro) {
         if (!todoLleno) {
             alert("Por favor, llena todos los campos antes de enviar el registro.");
         } else {
-            alert("¡Registro enviado con éxito!");
+            alert("¡Registro completado con éxito! Bienvenido a nuestro Vivero.");
             formRegistro.reset();
             submitBtn.disabled = true; // Volver a deshabilitar tras reiniciar
         }
@@ -45,10 +45,10 @@ if (btnVerMas && infoExtra) {
     btnVerMas.addEventListener('click', function() {
         if (infoExtra.classList.contains('oculta')) {
             infoExtra.classList.remove('oculta');
-            btnVerMas.textContent = "Ocultar información";
+            btnVerMas.textContent = "Ocultar información del equipo";
         } else {
             infoExtra.classList.add('oculta');
-            btnVerMas.textContent = "Ver más información";
+            btnVerMas.textContent = "Ver más sobre el proyecto";
         }
     });
 }
@@ -62,7 +62,7 @@ if (botonesAgregar.length > 0) {
             if (cartCounterEl) {
                 cartCounterEl.textContent = cartCounter;
             }
-            alert("El producto ha sido agregado a tu carrito.");
+            alert("¡Planta agregada a tu carrito verde!");
         });
     });
 }
@@ -107,7 +107,7 @@ if (btnBuscar && inputBuscar && areaResultados) {
         if (texto !== '') {
             areaResultados.innerHTML = "<strong>Resultados para la búsqueda de:</strong> " + texto;
         } else {
-            areaResultados.innerHTML = "Por favor, ingresa el nombre de un producto.";
+            areaResultados.innerHTML = "Por favor, ingresa el nombre de una planta o accesorio.";
         }
     });
 }
