@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio & Electrónica - Carrito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Audio & Electrónica Tuxtla</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+                <li><a href="carrito.html">Carrito (<span id="cart-counter">0</span>)</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+<h2>Tu Carrito de Compra</h2>
+<p>Modifica las cantidades para ver cómo se actualiza el total automáticamente.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Crossover Pasivo 2 Vías</td>
+            <td>$400.00</td>
+            <!-- Inputs que solo aceptan números -->
+            <td><input type="number" class="input-qty" data-precio="400" value="1" min="0" style="width: 70px;"></td>
+            <td>Calculado en el total</td>
+        </tr>
+        <tr>
+            <td>Kit Tubo Termocontráctil</td>
+            <td>$150.00</td>
+            <td><input type="number" class="input-qty" data-precio="150" value="2" min="0" style="width: 70px;"></td>
+            <td>Calculado en el total</td>
+        </tr>
+    </tbody>
+</table>
+<h3 style="text-align: right; margin-top: 20px; font-size: 22px;">Total a pagar: $<span id="total-precio">0.00</span> MXN</h3>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

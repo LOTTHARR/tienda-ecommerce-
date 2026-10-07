@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio & Electrónica - Búsqueda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Audio & Electrónica Tuxtla</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+                <li><a href="carrito.html">Carrito (<span id="cart-counter">0</span>)</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+<h2>Búsqueda de Productos</h2>
+<div class="form-group" style="display: flex; gap: 10px;">
+    <input type="text" id="input-busqueda" placeholder="Ej. Amplificador, RCA, Transistor...">
+    <button id="btn-buscar" class="btn">Buscar</button>
+</div>
+
+<div id="area-resultados" style="margin-bottom: 30px; padding: 15px; background: #e9ecef; border-radius: 4px; min-height: 50px; font-size: 18px;">
+    <!-- Aquí JavaScript inyecta el resultado -->
+</div>
+
+<h3>Sugerencias del catálogo:</h3>
+<div class="producto-grid">
+    <div class="producto-card">
+        <h4>Cable RCA Macho a Macho 5m</h4>
+        <button class="btn btn-agregar" disabled>Ver detalles</button>
+    </div>
+    <div class="producto-card">
+        <h4>Transistor MOSFET IRFZ44N</h4>
+        <button class="btn btn-agregar" disabled>Ver detalles</button>
+    </div>
+</div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
